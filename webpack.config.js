@@ -10,18 +10,19 @@ const OptimizeCSSAssetsPlugin = require("optimize-css-assets-webpack-plugin");
 // So NODE_ENV and WEBPACK_ENV are seperated so that dev deps can be installed and the code be minified
 const mode = process.env.WEBPACK_ENV || "development";
 
-const hwpConfigs = ["index.html", "sub/about.html"].map(entryName => {
+const hwpConfigs = ["index.html"].map(entryName => {
   return new HtmlWebpackPlugin({
     filename: entryName,
     template: `src/${entryName}`,
-    inject: true
+    inject: true,
+    favicon: "src/assets/favicon.ico"
   });
 });
 
 module.exports = {
   mode,
   entry: {
-    app: ["./src/styles/main.scss", "./src/js/index.js"]
+    app: ["./src/styles/main.scss"]
   },
   devServer: {
     contentBase: path.join(__dirname, "dist"),
@@ -57,14 +58,7 @@ module.exports = {
         ]
       },
       {
-        test: /\.js$/,
-        exclude: /node_modules/,
-        use: {
-          loader: "babel-loader"
-        }
-      },
-      {
-        test: /\.(png|svg|jpg|gif)/,
+        test: /\.(png|svg|jpg|gif|ico)/,
         use: ["file-loader"]
       }
     ]
