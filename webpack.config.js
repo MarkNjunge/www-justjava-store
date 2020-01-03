@@ -10,7 +10,7 @@ const OptimizeCSSAssetsPlugin = require("optimize-css-assets-webpack-plugin");
 // So NODE_ENV and WEBPACK_ENV are seperated so that dev deps can be installed and the code be minified
 const mode = process.env.WEBPACK_ENV || "development";
 
-const hwpConfigs = ["index.html"].map(entryName => {
+const hwpConfigs = ["index.html", "privacy.html"].map(entryName => {
   return new HtmlWebpackPlugin({
     filename: entryName,
     template: `src/${entryName}`,
