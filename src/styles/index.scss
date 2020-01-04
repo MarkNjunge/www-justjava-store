@@ -23,8 +23,8 @@ $accent: #f57c00;
 
   .screenshots {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 2rem;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1.4rem;
   }
 
   .screenshot-card {
