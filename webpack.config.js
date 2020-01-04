@@ -66,8 +66,7 @@ module.exports = {
         test: /\.(png|svg|jpg|gif|ico|webp)/,
         loader: "file-loader",
         options: {
-          publicPath: "assets",
-          name: "[name].[md5:hash:7].[ext]"
+          name: "assets/[name].[md5:hash:7].[ext]"
         }
       }
     ]
