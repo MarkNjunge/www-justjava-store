@@ -1,6 +1,13 @@
+$accent: #f57c00;
+
 #index {
   background: #4d302b;
   color: #ffffff;
+
+  .header {
+    height: 10px;
+    background: $accent;
+  }
 
   .title {
     font-family: "Bree Serif", serif;
