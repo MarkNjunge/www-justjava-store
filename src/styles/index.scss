@@ -1,8 +1,13 @@
 $accent: #f57c00;
+$accent-dark: #d16800;
 
 #index {
   background: #4d302b;
   color: #ffffff;
+
+  .text-accent-dark {
+    color: $accent-dark;
+  }
 
   .header {
     height: 10px;
