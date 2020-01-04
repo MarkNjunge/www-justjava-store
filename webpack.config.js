@@ -22,7 +22,11 @@ const hwpConfigs = ["index.html", "privacy.html"].map(entryName => {
 module.exports = {
   mode,
   entry: {
-    app: ["./src/styles/main.scss"]
+    app: [
+      "./src/styles/main.scss",
+      "./src/styles/index.scss",
+      "./src/styles/privacy.scss"
+    ]
   },
   devServer: {
     contentBase: path.join(__dirname, "dist"),
