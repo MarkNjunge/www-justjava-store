@@ -4,6 +4,8 @@
 
 @tailwind utilities;
 
+@import url("https://fonts.googleapis.com/css?family=Bree+Serif|Lato&display=swap");
+
 $bg: #f4f4f4;
 
 * {
@@ -14,4 +16,5 @@ $bg: #f4f4f4;
 
 body {
   background: $bg;
+  font-family: "Lato", sans-serif;
 }

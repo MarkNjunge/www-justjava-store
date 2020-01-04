@@ -7,8 +7,50 @@
     <title>JustJava</title>
   </head>
   <body id="index">
-    <div class="container mx-auto">
-      <h1 class="text-3xl text-center mt-4">JustJava</h1>
+    <!-- ICONS -->
+    <svg class="hidden">
+      <symbol id="scroll-down" viewBox="0 0 24 24">
+        <path fill="currentColor"
+          d="M 3.0292969 3 L 0.97070312 6.4140625 L 12 13 L 23.029297 6.4140625 L 20.970703 3 L 12 8.3574219 L 3.0292969 3 z M 3.0292969 11 L 0.97070312 14.414062 L 12 21 L 23.029297 14.414062 L 20.970703 11 L 12 16.357422 L 3.0292969 11 z">
+        </path>
+      </symbol>
+    </svg>
+    <div class="container mx-auto max-w-6xl pr-4 pl-4">
+      <!-- FIRST SCREEN -->
+      <section class="h-screen flex flex-col justify-between">
+        <!-- MAIN CONTENT -->
+        <div class="pt-4 md:pt-0 h-full flex flex-col md:flex-row items-center justify-center">
+          <!-- SCREENSHOT -->
+          <div id="left-content">
+            <img src="./assets/just-java-screenshot.png" alt="" srcset="" class="screenshot" />
+          </div>
+          <!-- MAIN TEXT -->
+          <div id="right-content" class="ml-0 md:ml-24">
+            <div class="flex items-baseline">
+              <img src="./assets/logo.svg" alt="Logo" srcset="" class="h-16 mr-2" />
+              <h1 class="text-6xl title">JustJava</h1>
+            </div>
+            <p class="mt-0 md:mt-4 max-w-md text-xl">
+              A mock food ordering and delivery application for a coffee shop
+            </p>
+            <!-- DOWNLOAD BADGES -->
+            <div class="mt-4 flex justify-center md:justify-start">
+              <a href="https://play.google.com/store/apps/details?id=com.marknkamau.justjava">
+                <img src="./assets/google-play-badge.png" alt="" class="download-badge mr-4" />
+              </a>
+              <a href="https://skyll.marknjunge.com/justjava?redirect=true">
+                <img src="./assets/latest-build.png" alt="" class="download-badge" />
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- SCROLL ICON -->
+        <div class="mb-2 md:mb-4 mt-2 md:mt-0 flex justify-center">
+          <svg class="text-white h-6 opacity-25">
+            <use href="#scroll-down"></use>
+          </svg>
+        </div>
+      </section>
     </div>
   </body>
 </html>

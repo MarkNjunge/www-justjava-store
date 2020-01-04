@@ -1,2 +1,35 @@
 #index {
+  background: #4d302b;
+  color: #ffffff;
+
+  .title {
+    font-family: "Bree Serif", serif;
+  }
+
+  .screenshot {
+    height: 600px;
+  }
+
+  .download-badge {
+    height: 60px;
+  }
+
+  /* Small (sm) */
+  @media (max-width: 640px) {
+  }
+
+  /* Medium (md) */
+  @media (max-width: 768px) {
+    .screenshot {
+      height: 400px;
+    }
+
+    .download-badge {
+      height: 40px;
+    }
+  }
+
+  /* Large (lg) */
+  @media (max-width: 1024px) {
+  }
 }
