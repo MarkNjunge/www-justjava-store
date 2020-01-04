@@ -21,6 +21,20 @@ $accent: #f57c00;
     height: 60px;
   }
 
+  .screenshots {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 2rem;
+  }
+
+  .screenshot-card {
+    background: #593731;
+
+    img {
+      width: 280px;
+    }
+  }
+
   /* Small (sm) */
   @media (max-width: 640px) {
   }
@@ -33,6 +47,16 @@ $accent: #f57c00;
 
     .download-badge {
       height: 40px;
+    }
+
+    .screenshots {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .screenshot-card {
+      img {
+        width: 180px;
+      }
     }
   }
 
