@@ -4,6 +4,7 @@ const miniCssExtractPlugin = require("mini-css-extract-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const TerserJSPlugin = require("terser-webpack-plugin");
 const OptimizeCSSAssetsPlugin = require("optimize-css-assets-webpack-plugin");
+const CopyPlugin = require("copy-webpack-plugin");
 
 // For css and js to be minified, the env can't be development
 // But if NODE_ENV is production, webpack won't be installed because it's a dev dependency
@@ -76,6 +77,7 @@ module.exports = {
     new miniCssExtractPlugin({
       filename: "[name].css",
       chunkFilename: "[id].css"
-    })
+    }),
+    new CopyPlugin([{ from: "./src/assets/SEO.webp", to: "assets/SEO.webp" }])
   ].concat(hwpConfigs)
 };
