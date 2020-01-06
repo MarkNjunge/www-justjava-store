@@ -1,6 +1,6 @@
-# Tailwind Webpack Starter
+# JustJava.store
 
-A Tailwind CSS starter using Webpack.
+https://justjava.store/
 
 ## Commands
 
