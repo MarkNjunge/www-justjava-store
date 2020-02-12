@@ -23,11 +23,7 @@ const hwpConfigs = ["index.html", "privacy.html"].map(entryName => {
 module.exports = {
   mode,
   entry: {
-    app: [
-      "./src/styles/main.scss",
-      "./src/styles/index.scss",
-      "./src/styles/privacy.scss"
-    ]
+    app: ["./src/styles/main.scss", "./src/styles/index.scss", "./src/styles/privacy.scss"]
   },
   devServer: {
     contentBase: path.join(__dirname, "dist"),
@@ -78,6 +74,10 @@ module.exports = {
       filename: "[name].css",
       chunkFilename: "[id].css"
     }),
-    new CopyPlugin([{ from: "./src/assets/SEO.webp", to: "assets/SEO.webp" }])
+    new CopyPlugin([
+      { from: "./src/assets/SEO.webp", to: "assets/SEO.webp" },
+      { from: "./src/assets/forgot-password.jpg", to: "assets/forgot-password.jpg" },
+      { from: "./src/assets/logo-brown-30.png", to: "assets/logo-brown-30.png" }
+    ])
   ].concat(hwpConfigs)
 };
