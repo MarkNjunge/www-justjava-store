@@ -79,10 +79,6 @@ module.exports = {
       filename: "[name].css",
       chunkFilename: "[id].css"
     }),
-    new CopyPlugin([
-      { from: "./src/assets/SEO.webp", to: "assets/SEO.webp" },
-      { from: "./src/assets/forgot-password.jpg", to: "assets/forgot-password.jpg" },
-      { from: "./src/assets/logo-brown-30.png", to: "assets/logo-brown-30.png" }
-    ])
+    new CopyPlugin([{ from: "./src/assets/SEO.webp", to: "assets/SEO.webp" }])
   ].concat(hwpConfigs)
 };
