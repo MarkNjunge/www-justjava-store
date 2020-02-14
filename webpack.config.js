@@ -11,7 +11,7 @@ const CopyPlugin = require("copy-webpack-plugin");
 // So NODE_ENV and WEBPACK_ENV are seperated so that dev deps can be installed and the code be minified
 const mode = process.env.WEBPACK_ENV || "development";
 
-const hwpConfigs = ["index.html", "privacy.html"].map(entryName => {
+const hwpConfigs = ["index.html", "privacy.html", "reset-password.html"].map(entryName => {
   return new HtmlWebpackPlugin({
     filename: entryName,
     template: `src/${entryName}`,
@@ -23,7 +23,12 @@ const hwpConfigs = ["index.html", "privacy.html"].map(entryName => {
 module.exports = {
   mode,
   entry: {
-    app: ["./src/styles/main.scss", "./src/styles/index.scss", "./src/styles/privacy.scss"]
+    app: [
+      "./src/styles/main.scss",
+      "./src/styles/index.scss",
+      "./src/styles/privacy.scss",
+      "./src/styles/reset-password.scss"
+    ]
   },
   devServer: {
     contentBase: path.join(__dirname, "dist"),
