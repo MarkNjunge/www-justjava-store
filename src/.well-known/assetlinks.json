@@ -1,0 +1,20 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.marknkamau.justjava.debug",
+      "sha256_cert_fingerprints": [
+        "39:0F:CC:5E:AF:AF:76:C2:47:08:3F:16:1C:54:89:FA:89:90:98:2F:D3:61:F2:89:44:85:E6:36:61:64:DF:39"
+      ]
+    }
+  },
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.marknkamau.justjava",
+      "sha256_cert_fingerprints": ["6F:C7:04:1E:76:7E:C5:91:FE:BF:16:B3:78:AB:04:07:0B:4D:41:DA"]
+    }
+  }
+]
